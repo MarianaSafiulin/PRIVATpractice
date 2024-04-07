@@ -12,3 +12,16 @@ function getShippingMessage (country, price, deliveryFee){
 }
 
 console.log(getShippingMessage("Australia", 120, 50));
+
+function getElementWidth (content, padding, border){
+    const contentWidth = parseInt(content);
+    const paddingWidth = parseInt(padding);
+    const borderWidth = parseInt(border);
+
+ 
+let totalWidth = contentWidth + paddingWidth * 2  +  borderWidth * 2;
+
+return totalWidth;
+
+}
+console.log(getElementWidth("50px", "8px", "4px"));
